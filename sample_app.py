@@ -8,7 +8,7 @@ def main():
 
 @app.route("/a")
 def about():
-    return render_template("bout.html")
+    return render_template("about.html")
 
 @app.route("/backup")
 def backup():
