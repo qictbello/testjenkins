@@ -16,7 +16,7 @@ def backup():
 
 @app.route("/works")
 def works():
-    return render_template("orks.html")
+    return render_template("works.html")
 
 # Route to serve static images from the "public" folder
 @app.route("/public/<path:filename>")
