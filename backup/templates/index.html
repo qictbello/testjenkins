@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bello's Portfolio</title>
-    <meta property="og:title" content="Bello's Portfolio" />
+    <title>Luffy's Portfolio</title>
+    <meta property="og:title" content="Luffy's Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -49,21 +49,21 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
     <div>
-      <link href="./home.css" rel="stylesheet" />
+      <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet" />
 
       <div class="home-container">
         <div data-role="Header" class="home-navbar-container">
           <div class="home-navbar">
-            <a href="index.html" class="home-heading Card-Heading">
-              CPE232 - CPE31S24
+            <a href="index" class="home-heading Card-Heading">
+              CPE028 - CPE41S1
             </a>
             <div class="home-links-container">
-              <a href="about.html" class="home-link Navbar-Link">About</a>
-              <a href="works.html" class="home-link01 Navbar-Link">Works</a>
+              <a href="about" class="home-link Navbar-Link">About</a>
+              <a href="works" class="home-link01 Navbar-Link">Works</a>
               <a
                 href="https://github.com/qictbello"
                 target="_blank"
@@ -109,24 +109,23 @@
               <h1 class="home-heading2 Section-Heading">
                 <span>My Name is</span>
                 <br />
-                <span>Ian Carlo T. Bello</span>
+                <span>Monkey D. Luffy</span>
               </h1>
               <span class="home-text3 Section-Text">
-                I am a 3rd year computer engineering student, I made this
-                website for our final project. I hope you like it!
+                I am the man who will become the Pirate King!
               </span>
               <div class="home-cta-btn-container">
-                <a href="works.html" class="home-cta-btn Anchor button">
+                <a href="works" class="home-cta-btn Anchor button">
                   <span class="home-text4">MY WORK</span>
                 </a>
-                <a href="about.html" class="home-cta-btn1 button Anchor">
+                <a href="about" class="home-cta-btn1 button Anchor">
                   ABOUT ME
                 </a>
               </div>
             </div>
             <img
               alt="image"
-              src="public/playground_assets/49005370_2071192049629486_2134642954210377728_n-1500w.jpg"
+              src="{{ url_for('public', filename='49005370_2071192049629486_2134642954210377728_n-1500w.jpeg') }}"
               class="home-image"
             />
           </div>
